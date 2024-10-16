@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Todo } from './todo';
 import { map } from 'rxjs/operators'; // Import map operator
-// Load environment variables
 import { environment } from '../env';
 
 @Injectable({

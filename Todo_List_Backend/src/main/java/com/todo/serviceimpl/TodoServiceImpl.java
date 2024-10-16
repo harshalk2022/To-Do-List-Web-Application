@@ -33,14 +33,14 @@ public class TodoServiceImpl implements TodoService {
 	// fetching Todo details from table based on id, if not found then throw
 	public Todo getTodoById(long id) {
 		return todoRepository.findById(id)
-				.orElseThrow(() -> new TodoNotFoundException("Entered Todo Id dose not exits" +id));
+				.orElseThrow(() -> new TodoNotFoundException("Entered Todo Id dose not exits" + id));
 	}
 
 	@Override
 	// Updating Todo details based on id from table using save()
 	public Todo updateTodoById(Todo todo, long id) {
 		Todo newTodo = todoRepository.findById(id)
-				.orElseThrow(() -> new TodoNotFoundException("Entered Todo Id dose not exits" +id));
+				.orElseThrow(() -> new TodoNotFoundException("Entered Todo Id dose not exits" + id));
 
 		// Set new values
 		newTodo.setTitle(todo.getTitle());
@@ -56,7 +56,7 @@ public class TodoServiceImpl implements TodoService {
 	@Override
 	// Delete Todo Based on Id using deleteById()
 	public void deleteTodoById(long id) {
-		todoRepository.findById(id).orElseThrow(() -> new TodoNotFoundException("Entered Todo Id dose not exits" +id));
+		todoRepository.findById(id).orElseThrow(() -> new TodoNotFoundException("Entered Todo Id dose not exits" + id));
 		todoRepository.deleteById(id);
 
 	}

@@ -20,7 +20,7 @@ public class Todo {
 	private long id;
 
 	@Column(name = "title", length = 100, nullable = false)
-	@NotBlank(message = "title can't be empty")
+	@NotBlank(message = "Title can't be empty")
 	private String title;
 
 	@Column(name = "description", length = 250)
@@ -35,7 +35,6 @@ public class Todo {
 	// Constructor
 	public Todo() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Todo(String title, String description, boolean isCompleted) {
