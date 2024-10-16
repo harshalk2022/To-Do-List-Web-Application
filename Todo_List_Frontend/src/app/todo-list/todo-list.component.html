@@ -1,0 +1,41 @@
+<h3>Todo List</h3>
+
+<table class="table table-hover table-bordered my-4">
+  <thead class="bg-light">
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Time</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let todo of todos">
+      <td>{{ todo.id }}</td>
+      <td>{{ todo.title }}</td>
+      <td>{{ todo.description }}</td>
+      <td>{{ todo.isCompleted ? "Completed" : "Not Completed" }}</td>
+      <td>{{ todo.createdAt | date: "yyyy-MM-dd HH:mm:ss" }}</td>
+
+      <td>
+        <button class="btn btn-info btn-sm mx-1" (click)="todoDetails(todo.id)">
+          View
+        </button>
+        <button
+          class="btn btn-warning btn-sm mx-1"
+          (click)="updateTodo(todo.id)"
+        >
+          Update
+        </button>
+        <button
+          class="btn btn-danger btn-sm mx-1"
+          (click)="deleteTodo(todo.id)"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

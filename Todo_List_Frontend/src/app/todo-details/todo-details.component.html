@@ -1,0 +1,24 @@
+<h2>Todo Details</h2>
+
+<div class="container my-4">
+  <div>
+    <label><b>Todo Id:</b></label> {{ todo.id }}
+  </div>
+
+  <div>
+    <label><b>Title:</b></label> {{ todo.title }}
+  </div>
+
+  <div>
+    <label><b>Description:</b></label> {{ todo.description }}
+  </div>
+
+  <div>
+    <label><b>Status:</b></label>
+    {{ todo.isCompleted ? "Completed" : "Not Completed" }}
+  </div>
+
+  <div>
+    <label><b>Time & Date:</b></label> {{ todo.createdAt }}
+  </div>
+</div>
