@@ -1,7 +1,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Todo</a>
+    <a class="navbar-brand" href="#">To-Do List</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,18 +15,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" routerLink="todos" routerLinkActive="active"
+        <!-- <a class="nav-link" routerLink="todos" routerLinkActive="active"
           >Todo List</a
-        >
+        > -->
         <a class="nav-link" routerLink="create-todo" routerLinkActive="active"
-          >Add New Todo</a
+          >Add New</a
+        >
+
+        <a class="nav-link" routerLink="api-documentation" routerLinkActive="active"
+          >API Documentation</a
         >
       </div>
     </div>
   </div>
 </nav>
 
-<h1 class="text-center my-4">{{ title }}</h1>
+<h2 class="text-center my-4">{{ title }}</h2>
 
 <div class="container my-4">
   <hr />

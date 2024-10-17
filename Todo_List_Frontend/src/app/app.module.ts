@@ -8,6 +8,7 @@ import { CreateTodoComponent } from './create-todo/create-todo.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateTodoComponent } from './update-todo/update-todo.component';
 import { TodoDetailsComponent } from './todo-details/todo-details.component';
+import { ApiDocumentationComponent } from './api-documentation/api-documentation.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TodoDetailsComponent } from './todo-details/todo-details.component';
     CreateTodoComponent,
     UpdateTodoComponent,
     TodoDetailsComponent,
+    ApiDocumentationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
