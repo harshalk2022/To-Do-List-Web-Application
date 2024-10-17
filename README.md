@@ -13,6 +13,7 @@ This is a simple web-based To-Do List application built using Angular for the fr
     - [Backend Setup](#backend-setup)
     - [Frontend Setup](#frontend-setup)
     - [Running the Full Application](#running-the-full-application)
+  - [Screenshots][#screenshots]  
   - [API Documentation](#api-documentation)
     - [1\. Get All todos](#1-get-all-todos)
     - [2\. Get a Task by ID](#2-get-a-task-by-id)
@@ -105,6 +106,28 @@ This is a simple web-based To-Do List application built using Angular for the fr
 
 1. Ensure both the backend and frontend servers are running.
 2. Open a browser and go to `http://localhost:4200` to start using the To-Do List application.
+
+## Screenshots
+
+**1. Home Page**
+
+<img src="Screenshots\home_page.png" width="700px"/><br>
+
+**2. Add New Page**
+
+<img src="Screenshots\add_new_page.png" width="700px"/><br>
+
+**3. View Page**
+
+<img src="Screenshots\view_page.png" width="700px"/><br>
+
+**4. Update Page**
+
+<img src="Screenshots\update_page.png" width="700px"/><br>
+
+**5. API Documentation Page**
+
+<img src="Screenshots\api_documentation_page.png" width="700px"/><br>
 
 ## API Documentation
 
