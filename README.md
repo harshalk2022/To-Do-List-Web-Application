@@ -13,7 +13,7 @@ This is a simple web-based To-Do List application built using Angular for the fr
     - [Backend Setup](#backend-setup)
     - [Frontend Setup](#frontend-setup)
     - [Running the Full Application](#running-the-full-application)
-  - [Screenshots][#screenshots]  
+  - [Screenshots](#screenshots)  
   - [API Documentation](#api-documentation)
     - [1\. Get All todos](#1-get-all-todos)
     - [2\. Get a Task by ID](#2-get-a-task-by-id)
