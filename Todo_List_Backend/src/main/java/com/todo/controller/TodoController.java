@@ -29,8 +29,6 @@ public class TodoController {
 	@Autowired
 	private TodoService todoService;
 
-
-	//gsfds
 	// Saving Todo details using Post Mapping
 	@PostMapping("/todos")
 	public ResponseEntity<Todo> saveTodo(@Valid @RequestBody Todo todo) {
