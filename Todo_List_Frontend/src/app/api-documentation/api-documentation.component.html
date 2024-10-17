@@ -1,1 +1,142 @@
-<p>api-documentation works!</p>
+<div class="container my-5">
+  <h1 class="text-center mb-4">API Documentation</h1>
+
+  <section id="task-api">
+    <h2>Task API Endpoints</h2>
+    <p>
+      The backend provides a RESTful API to interact with todos. The base URL
+      for all API endpoints is:
+    </p>
+    <code class="bg-light p-2 d-block mb-3"
+      >http://localhost:8181/api/todos</code
+    >
+
+    <!-- Get All todos -->
+    <div class="mb-5">
+      <h3>1. Get All todos</h3>
+      <ul>
+        <li><strong>Endpoint</strong>: <code>/api/todos</code></li>
+        <li><strong>Method</strong>: <code>GET</code></li>
+        <li><strong>Description</strong>: Retrieves a list of all todos.</li>
+      </ul>
+      <h5>Response:</h5>
+      <pre class="bg-light p-3">
+[
+  &#123;
+    "id": 1,
+    "title": "Buy Grocery",
+    "description": "Milk, Egg, Vegetables etc.",
+    "isCompleted": false,
+    "createdAt": "2024-10-17T02:05:21.088683"
+  &#125;,
+  &#123;
+    "id": 2,
+    "title": "Pay Rent",
+    "description": "PG, Mess",
+    "isCompleted": false,
+    "createdAt": "2024-10-17T02:06:00.969412"
+  &#125;
+]
+        </pre
+      >
+    </div>
+
+    <!-- Get a Task by ID -->
+    <div class="mb-5">
+      <h3>2. Get a Task by ID</h3>
+      <ul>
+        <li>
+          <strong>Endpoint</strong>: <code>/api/todos/&#123;id&#125;</code>
+        </li>
+        <li><strong>Method</strong>: <code>GET</code></li>
+        <li><strong>Description</strong>: Retrieves a task by its ID.</li>
+      </ul>
+      <h5>Response:</h5>
+      <pre class="bg-light p-3">
+&#123;
+  "id": 1,
+  "title": "Buy Grocery",
+  "description": "Milk, Egg, Vegetables etc.",
+  "isCompleted": false,
+  "createdAt": "2024-10-17T02:05:21.088683"
+&#125;
+        </pre
+      >
+    </div>
+
+    <!-- Create a New Task -->
+    <div class="mb-5">
+      <h3>3. Create a New Task</h3>
+      <ul>
+        <li><strong>Endpoint</strong>: <code>/api/todos</code></li>
+        <li><strong>Method</strong>: <code>POST</code></li>
+        <li><strong>Description</strong>: Creates a new task.</li>
+      </ul>
+      <h5>Request Body:</h5>
+      <pre class="bg-light p-3">
+&#123;
+  "title": "New Task",
+  "description": "Description of the new task"
+&#125;
+        </pre
+      >
+      <h5>Response:</h5>
+      <pre class="bg-light p-3">
+&#123;
+  "id": 3,
+  "title": "New Task",
+  "description": "Description of the new task",
+  "isCompleted": false,
+  "createdAt": "2024-10-17T03:04:21.088683"
+&#125;
+        </pre
+      >
+    </div>
+
+    <!-- Update a Task -->
+    <div class="mb-5">
+      <h3>4. Update a Task</h3>
+      <ul>
+        <li>
+          <strong>Endpoint</strong>: <code>/api/todos/&#123;id&#125;</code>
+        </li>
+        <li><strong>Method</strong>: <code>PUT</code></li>
+        <li><strong>Description</strong>: Updates an existing task.</li>
+      </ul>
+      <h5>Request Body:</h5>
+      <pre class="bg-light p-3">
+&#123;
+  "title": "Updated Task Title",
+  "description": "Updated task description",
+  "isCompleted": true
+&#125;
+        </pre
+      >
+      <h5>Response:</h5>
+      <pre class="bg-light p-3">
+&#123;
+  "id": 1,
+  "title": "Updated Task Title",
+  "description": "Updated task description",
+  "isCompleted": true,
+  "createdAt": "2024-10-17T03:04:21.088683"
+&#125;
+        </pre
+      >
+    </div>
+
+    <!-- Delete a Task -->
+    <div class="mb-5">
+      <h3>5. Delete a Task</h3>
+      <ul>
+        <li>
+          <strong>Endpoint</strong>: <code>/api/todos/&#123;id&#125;</code>
+        </li>
+        <li><strong>Method</strong>: <code>DELETE</code></li>
+        <li><strong>Description</strong>: Deletes a task by its ID.</li>
+      </ul>
+      <h5>Response:</h5>
+      <pre class="bg-light p-3">Deleted Successfully</pre>
+    </div>
+  </section>
+</div>

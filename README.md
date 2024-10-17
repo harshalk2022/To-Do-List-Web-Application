@@ -9,21 +9,17 @@ This is a simple web-based To-Do List application built using Angular for the fr
   - [Features](#features)
   - [Technologies Used](#technologies-used)
   - [Installation](#installation)
-  - [Prerequisites](#prerequisites)
-  - [Backend Setup](#backend-setup)
-  - [Server Configuration](#server-configuration)
-- [Database Configuration:MySQL](#database-configurationmysql)
-- [Hibernate Configuration](#hibernate-configuration)
-- [Frontend Setup](#frontend-setup)
-- [Running the Full Application](#running-the-full-application)
-- [API Documentation](#api-documentation)
-  - [Task API Endpoints](#task-api-endpoints)
-    - [1. Get All todos](#1-get-all-todos)
-    - [2. Get a Task by ID](#2-get-a-task-by-id)
-    - [3. Create a New Task](#3-create-a-new-task)
-    - [4. Update a Task](#4-update-a-task)
-    - [5. Delete a Task](#5-delete-a-task)
-- [License](#license)
+    - [Prerequisites](#prerequisites)
+    - [Backend Setup](#backend-setup)
+    - [Frontend Setup](#frontend-setup)
+    - [Running the Full Application](#running-the-full-application)
+  - [API Documentation](#api-documentation)
+    - [1\. Get All todos](#1-get-all-todos)
+    - [2\. Get a Task by ID](#2-get-a-task-by-id)
+    - [3\. Create a New Task](#3-create-a-new-task)
+    - [4\. Update a Task](#4-update-a-task)
+    - [5\. Delete a Task](#5-delete-a-task)
+  - [License](#license)
 
 ## Features
 
@@ -63,17 +59,18 @@ This is a simple web-based To-Do List application built using Angular for the fr
    ```
 
 2. Configure the database:
+
    - Open the `application.properties` file located in the `src/main/resources` folder.
    - Update the following lines with your MySQL configuration:
 
-    ```properties
-    # Database Configuration:MySQL
-    spring.datasource.url=jdbc:mysql://localhost:3306/yourDatabaseName
-    spring.datasource.username=yourUsername 
-    spring.datasource.password=yourPassword
-    ```
+   ```properties
+   # Database Configuration:MySQL
+   spring.datasource.url=jdbc:mysql://localhost:3306/yourDatabaseName
+   spring.datasource.username=yourUsername
+   spring.datasource.password=yourPassword
+   ```
 
-1. Build and run the Spring Boot backend:
+3. Build and run the Spring Boot backend:
 
    ```bash
    mvn clean install
@@ -111,11 +108,9 @@ This is a simple web-based To-Do List application built using Angular for the fr
 
 ## API Documentation
 
-### Task API Endpoints
-
 The backend provides a RESTful API to interact with todos. The base URL for all API endpoints is `http://localhost:8181/api/todos`.
 
-#### 1. Get All todos
+### 1. Get All todos
 
 - **Endpoint**: `/api/todos`
 - **Method**: `GET`
@@ -125,23 +120,23 @@ The backend provides a RESTful API to interact with todos. The base URL for all 
   ```json
   [
     {
-        "id": 1,
-        "title": "Buy Grocery",
-        "description": "Milk, Egg, Vegetables etc.",
-        "isCompleted": false,
-        "createdAt": "2024-10-17T02:05:21.088683"
+      "id": 1,
+      "title": "Buy Grocery",
+      "description": "Milk, Egg, Vegetables etc.",
+      "isCompleted": false,
+      "createdAt": "2024-10-17T02:05:21.088683"
     },
     {
-        "id": 2,
-        "title": "Pay Rent",
-        "description": "PG, Mess",
-        "isCompleted": false,
-        "createdAt": "2024-10-17T02:06:00.969412"
+      "id": 2,
+      "title": "Pay Rent",
+      "description": "PG, Mess",
+      "isCompleted": false,
+      "createdAt": "2024-10-17T02:06:00.969412"
     }
   ]
   ```
 
-#### 2. Get a Task by ID
+### 2. Get a Task by ID
 
 - **Endpoint**: `/api/todos/{id}`
 - **Method**: `GET`
@@ -158,7 +153,7 @@ The backend provides a RESTful API to interact with todos. The base URL for all 
   }
   ```
 
-#### 3. Create a New Task
+### 3. Create a New Task
 
 - **Endpoint**: `/api/todos`
 - **Method**: `POST`
@@ -184,7 +179,7 @@ The backend provides a RESTful API to interact with todos. The base URL for all 
   }
   ```
 
-#### 4. Update a Task
+### 4. Update a Task
 
 - **Endpoint**: `/api/todos/{id}`
 - **Method**: `PUT`
@@ -211,7 +206,7 @@ The backend provides a RESTful API to interact with todos. The base URL for all 
   }
   ```
 
-#### 5. Delete a Task
+### 5. Delete a Task
 
 - **Endpoint**: `/api/todos/{id}`
 - **Method**: `DELETE`

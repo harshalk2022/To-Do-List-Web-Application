@@ -1,14 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+// api-documentation.component.ts
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-api-documentation',
   templateUrl: './api-documentation.component.html',
-  styleUrls: ['./api-documentation.component.css']
+  styleUrls: ['./api-documentation.component.css'],
 })
-
-export class ApiDocumentationComponent{
-  constructor(
-    private router: Router,
-  ) {}
-}
+export class ApiDocumentationComponent {}
