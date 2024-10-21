@@ -31,6 +31,7 @@ public class TodoServiceImpl implements TodoService {
 
 	@Override
 	// fetching Todo details from table based on id, if not found then throw
+	// Exception
 	public Todo getTodoById(long id) {
 		return todoRepository.findById(id)
 				.orElseThrow(() -> new TodoNotFoundException("Entered Todo Id dose not exits" + id));
