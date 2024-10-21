@@ -54,7 +54,7 @@ This is a simple web-based To-Do List application built using Angular for the fr
 
 1. Clone the repository:
 
-   ```bash
+   ```sh
    git clone https://github.com/harshalk2022/To-Do-List-web-application.git
    cd To-Do-List-web-application/Todo_List_Backend
    ```
